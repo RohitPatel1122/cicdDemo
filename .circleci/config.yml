@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build_and_test:
     docker:
-      - image: gradle:alpine
+      - image: openjdk:8-jdk-alpine
     steps:
       - checkout
       - run: ./gradlew build
